@@ -1,0 +1,1 @@
+ReactNative 0.60.5
