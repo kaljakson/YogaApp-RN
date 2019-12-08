@@ -32,8 +32,9 @@ import SystemNotificationScreen from '../Containers/SystemNotificationScreen/Sys
 import NoClassDaysScreen from '../Containers/NoClassDaysScreen/NoClassDaysScreen';
 import GenerateCardScreen from '../Containers/GenerateCardScreen/GenerateCardScreen';
 
-
+//Tab3
 import BusinessScreen from '../Containers/BusinessScreen/BusinessScreen';
+import WishingWallScreen from '../Containers/WishingWallScreen/WishingWallScreen';
 import StudyScreen from '../Containers/StudyScreen/StudyScreen';
 import TeachingScreen from '../Containers/TeachingScreen/TeachingScreen';
 import ManagementScreen from '../Containers/ManagementScreen/ManagementScreen';
@@ -213,6 +214,13 @@ const TabNavigator = createBottomTabNavigator(
       screen: createStackNavigator({
         Business:{
           screen: BusinessScreen,
+          navigationOptions: ({ navigation }) => ({
+            title: STRINGS.Business,
+            header: (<TabHeader title={STRINGS.Business}/>),             
+          })
+        },
+        WishingWall:{
+          screen: WishingWallScreen,
           navigationOptions: ({ navigation }) => ({
             title: STRINGS.Business,
             header: (<TabHeader title={STRINGS.Business}/>),             

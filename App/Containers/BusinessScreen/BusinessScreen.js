@@ -22,7 +22,7 @@ export default class BusinessScreen extends React.Component {
 
   //'工作台' session handlers
   go2AgentMission = () => {
-    this.props.navigation.navigate('AgentMission');
+    this.props.navigation.navigate('WishingWall');
   }
   go2PersonalEducation = () => {
     this.props.navigation.navigate('PersonalEducation');
